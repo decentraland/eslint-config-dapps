@@ -27,12 +27,16 @@ module.exports = {
       'error',
       {
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
-        pathGroupsExcludedImportTypes: ['react', 'react-*', '@dcl/**', 'decentraland-*/**', 'decentraland-*'],
+        pathGroupsExcludedImportTypes: ['react', 'react-*/**', 'react-*', '@dcl/**', 'decentraland-*/**', 'decentraland-*'],
         pathGroups: [
           {
             pattern: 'react',
             group: 'builtin',
             position: 'before'
+          },
+          {
+            pattern: 'react-*/**',
+            group: 'builtin'
           },
           {
             pattern: 'react-*',
