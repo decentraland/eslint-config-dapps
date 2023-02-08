@@ -31,7 +31,7 @@ In `prettier.config.js`:
 
 ```js
 module.exports = {
-  ...require('@dapps/eslint-config-dapps/prettier.config')
+  ...require('@dcl/eslint-config-dapps/prettier.config')
 }
 ```
 
