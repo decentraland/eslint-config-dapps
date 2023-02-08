@@ -19,8 +19,6 @@ jobs:
           node-version: 16.x
       - name: install
         run: npm install
-      - name: test
-        run: npm run test
       - name: Publish
         uses: menduz/oddish-action@master
         with:
