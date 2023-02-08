@@ -19,6 +19,21 @@ In `eslintrc.json`:
 }
 ```
 
+```js
+{
+  "extends": "@dcl/eslint-config-dapps",
+  "parserOptions": {
+    "project": ["tsconfig.json"]
+  },
+  "overrides": {
+    "files": ['*.js'],
+    "rules": {
+      '@typescript-eslint/no-var-requires': 'off'
+    }
+  }
+}
+```
+
 In `tsconfig.json`:
 
 ```js
@@ -33,6 +48,12 @@ In `prettier.config.js`:
 module.exports = {
   ...require('@dcl/eslint-config-dapps/prettier.config')
 }
+```
+
+In `.prettierrc.json`:
+
+```js
+'@dcl/eslint-config-dapps/prettier.config'
 ```
 
 ## License
