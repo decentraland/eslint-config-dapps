@@ -5,7 +5,8 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "prettier.config.json",
+    ".eslintrc.js",
+    "prettier.config.js",
     "tsconfig.json"
   ],
   "scripts": {},
@@ -27,23 +28,21 @@
   },
   "homepage": "https://github.com/decentraland/eslint-config-dapps#readme",
   "dependencies": {
-    "@typescript-eslint/parser": "^5.0.0"
-  },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "eslint": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "dcl-tslint-config-standard": "^3.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.25.2",
-    "typescript": "*"
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2"
   },
   "devDependencies": {
-    "eslint": "8.33.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-react-app": "^6.0.0",
-    "prettier": "^2.8.3",
-    "tsconfigs": "5.0.0",
-    "typescript": "4.9.5"
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3"
+  },
+  "peerDependencies": {
+    "typescript": "*"
   },
   "prettier": "./prettier.config"
 }
