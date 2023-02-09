@@ -28,6 +28,7 @@ module.exports = {
       { selector: 'default', format: ['camelCase'] },
       { selector: 'variableLike', format: ['camelCase'] },
       { selector: 'variable', format: ['camelCase', 'UPPER_CASE'], leadingUnderscore: 'allow' },
+      { selector: 'function', format: ['PascalCase', 'camelCase'] },
       { selector: 'parameter', format: ['camelCase'], leadingUnderscore: 'allow' },
       { selector: 'memberLike', format: ['camelCase'] },
       { selector: 'memberLike', modifiers: ['private'], format: ['camelCase'], leadingUnderscore: 'require' },
