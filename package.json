@@ -33,16 +33,16 @@
     "dcl-tslint-config-standard": "^3.0.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.4"
   },
   "peerDependencies": {
-    "typescript": "*"
+    "typescript": "^4.6.0"
   },
   "prettier": "./prettier.config"
 }
