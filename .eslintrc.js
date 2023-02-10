@@ -20,6 +20,12 @@ module.exports = {
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
     '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+    '@typescript-eslint/no-unsafe-assignment': 'error',
+    '@typescript-eslint/no-unsafe-call': 'error',
+    '@typescript-eslint/no-unsafe-member-access': 'error',
+    '@typescript-eslint/no-unsafe-argument': 'error',
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
     '@typescript-eslint/unbound-method': 'error',
@@ -31,10 +37,10 @@ module.exports = {
       { selector: 'variable', types: ['function'], format: ['PascalCase', 'camelCase'] },
       { selector: 'parameter', format: ['camelCase'], leadingUnderscore: 'allow' },
       { selector: 'memberLike', format: ['camelCase'] },
-      { selector: 'memberLike', modifiers: ['private'], format: ['camelCase'], leadingUnderscore: 'require' },
       { selector: 'typeLike', format: ['PascalCase'] },
       { selector: 'typeParameter', format: ['PascalCase'], prefix: ['T'] },
-      { selector: 'interface', format: ['PascalCase'], custom: { regex: '^I[A-Z]', match: false } }
+      { selector: 'interface', format: ['PascalCase'], custom: { regex: '^I[A-Z]', match: false } },
+      { selector: 'enumMember', format: ['UPPER_CASE'] }
     ],
     'import/order': [
       'error',
