@@ -20,7 +20,6 @@ module.exports = {
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
     '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
-    '@typescript-eslint/no-unsafe-assignment': 'error',
     '@typescript-eslint/no-unsafe-call': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'error',
     '@typescript-eslint/no-unsafe-argument': 'error',
@@ -68,7 +67,8 @@ module.exports = {
         },
         warnOnUnassignedImports: true
       }
-    ]
+    ],
+    '@typescript-eslint/no-unsafe-assignment': 'off' // Turned off this rule for now, because method yield always returns `any`.
   },
   settings: {
     'import/resolver': {
