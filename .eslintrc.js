@@ -39,7 +39,8 @@ module.exports = {
       { selector: 'typeLike', format: ['PascalCase'] },
       { selector: 'typeParameter', format: ['PascalCase'], prefix: ['T'] },
       { selector: 'interface', format: ['PascalCase'], custom: { regex: '^I[A-Z]', match: false } },
-      { selector: 'enumMember', format: ['UPPER_CASE'] }
+      { selector: 'enumMember', format: ['UPPER_CASE'] },
+      { selector: 'objectLiteralProperty', format: ['camelCase', 'snake_case'] }
     ],
     'import/order': [
       'error',
